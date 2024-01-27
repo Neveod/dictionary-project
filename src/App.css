@@ -4,9 +4,35 @@
   margin: 0 auto;
   padding-top: 10px;
   text-align: center;
+  background: #9fcaee;
+  padding: 25px;
 }
 
 .Synonyms {
   list-style-type: none;
   padding: 0px;
+}
+
+.Dictionary section {
+  background: rgb(238, 243, 245);
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0 0 0 / 10%);
+  margin: 20px 5px 20px;
+}
+.Dictionary input {
+  width: 55%;
+}
+
+.Dictionary .hint {
+  font-size: 12px;
+  opacity: 55%;
+}
+
+.Results section {
+  margin: 25px 5px 25px 5px;
+}
+
+.Results .phonetics {
+  opacity: 75%;
+  font-size: 20px;
 }

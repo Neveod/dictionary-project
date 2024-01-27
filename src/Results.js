@@ -7,6 +7,8 @@ export default function Results(props) {
       <div className="Results">
         <h2>
           <strong>{props.results.word}</strong>
+          <br />
+          {props.results.phonetic}
         </h2>
         {props.results.meanings.map(function (meaning, index) {
           return (

@@ -1,4 +1,12 @@
 .App {
   display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 10px;
   text-align: center;
+}
+
+.Synonyms {
+  list-style-type: none;
+  padding: 0px;
 }

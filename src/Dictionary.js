@@ -43,6 +43,9 @@ export default function Dictionary(props) {
       <div className="Dictionary">
         <section>
           <h1>📖</h1>
+          <h2>
+            <strong>Define</strong>
+          </h2>
           <form onSubmit={handleSubmit}>
             <input
               type="search"

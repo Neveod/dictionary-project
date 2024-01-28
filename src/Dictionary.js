@@ -10,11 +10,18 @@ export default function Dictionary() {
   function handleResponse(response) {
     setResults(response.data);
   }
+  function handleImagesResponse(response) {
+    console.log(response);
+  }
+
   function search() {
     let apiKey = `b5b6fea0f8dfd4f557b6o7066130170t`;
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-    //console.log(apiUrl);
+
     axios.get(apiUrl).then(handleResponse);
+
+    let imagesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${apiKey}`;
+    axios.get(imagesApiUrl).then(handleImagesResponse);
   }
 
   function handleSubmit(event) {
